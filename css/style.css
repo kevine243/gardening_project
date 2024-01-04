@@ -100,7 +100,7 @@ nav ul li a {
   font-size: 15px;
   transition: 0.5s ease;
 }
-.services button a{
+.services button{
   text-decoration: none;
   color: white;
 } 
@@ -147,6 +147,10 @@ footer li a{
   color: white;
   font-size: 20px;
   margin: 10px 0px;
+  animation: 0.5s;
+}
+footer li a:hover{
+  text-decoration:underline;
 }
 footer .elements{
   display: flex;
