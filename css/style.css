@@ -94,27 +94,42 @@ nav ul li a {
 .services button{
   background-color: rgb(5, 105, 5);
   padding:15px ;
-  color: white;
   border: none;
   cursor: pointer;
   border-radius:50% 50% 50% 50%;
   font-size: 15px;
+  transition: 0.5s ease;
+}
+.services button a{
+  text-decoration: none;
+  color: white;
+} 
+
+.services button:hover{
+  background-color: white;
+  color: rgb(5, 105, 5);
+  border:1px rgb(5, 105, 5) solid;
+  font-weight: bold;
+}
+.services button:hover a{
+  color:rgb(5, 105, 5);;
 }
 
 .images h1 {
   text-align: center;
   color: rgb(5, 105, 5);
-  font-size: 40px;
-  padding: auto;
+  font-size: 60px;
+  font-weight: bold;
+  padding: 30px 0 0 0;
 }
 .image_box {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  gap: 20px;
-  gap: 20px;
+  gap: 20px; 
   padding: 20px 60px;
 }
 .image_box img{
   width: 400px;
+  height: 300px;
 }
