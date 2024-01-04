@@ -34,7 +34,7 @@ nav ul li a {
 
 .main {
   background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.9)),
-    url("/images/main1.jpeg");
+    url("../images/main.jpeg");
   background-repeat: no-repeat;
   background-size: cover;
   height: 500px;
@@ -66,7 +66,7 @@ nav ul li a {
 .skills h1 {
   text-align: center;
   color: rgb(5, 105, 5);
-  font-size: 40px;
+  font-size: 60px;
 }
 .skill_box {
   display: grid;
@@ -76,8 +76,45 @@ nav ul li a {
   padding: 20px 60px;
   color: rgb(5, 105, 5);
   text-align: center;
+  font-weight: bold;
 }
 .skill_box img {
   width: 60px;
   height: 60px;
+}
+
+.services{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 12px;
+  padding: 10px 0;
+  color: rgb(5, 105, 5);
+}
+.services button{
+  background-color: rgb(5, 105, 5);
+  padding:15px ;
+  color: white;
+  border: none;
+  cursor: pointer;
+  border-radius:50% 50% 50% 50%;
+  font-size: 15px;
+}
+
+.images h1 {
+  text-align: center;
+  color: rgb(5, 105, 5);
+  font-size: 40px;
+  padding: auto;
+}
+.image_box {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+  gap: 20px;
+  padding: 20px 60px;
+}
+.image_box img{
+  width: 400px;
 }
