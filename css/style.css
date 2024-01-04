@@ -34,7 +34,7 @@ nav ul li a {
 
 .main {
   background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.9)),
-    url("../images/main.jpeg");
+    url("../images/main1.jpeg");
   background-repeat: no-repeat;
   background-size: cover;
   height: 500px;
@@ -132,4 +132,26 @@ nav ul li a {
 .image_box img{
   width: 400px;
   height: 300px;
+}
+
+footer{
+  background-color: rgb(5, 105, 5);
+  padding: 50px 160px 5px 110px;
+  color: white;
+  
+}
+footer h3{
+  text-decoration: underline;
+}
+footer li a{
+  color: white;
+  font-size: 20px;
+  margin: 10px 0px;
+}
+footer .elements{
+  display: flex;
+  justify-content: space-between;
+}
+footer .copyright{
+  margin-top: 20px;
 }
