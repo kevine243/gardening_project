@@ -1,5 +1,5 @@
 function calculateCost() {
-  // Sélection des éléments HTML correspondant aux cases à cocher et aux champs de coût
+  // Sélection des éléments HTML correspondant aux cases à cocher et aux champjs de coût
   const flower = document.querySelector("#flower");
   const tree = document.querySelector("#tree");
   const cleaning = document.querySelector("#cleaning");
