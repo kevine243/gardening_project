@@ -1,6 +1,9 @@
-@import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
+/* @import url('https://fonts.googleapis.com/css2?family=Source+Sans+3&display=swap'); */
+@import url('https://fonts.googleapis.com/css2?family=Fira+Sans+Extra+Condensed&display=swap');
+
 * {
-  font-family: "Poppins", "Helvetica Neue", Helvetica, Arial, sans;
+  /* font-family: 'Source Sans 3', sans-serif; */
+  font-family: 'Fira Sans Extra Condensed', sans-serif;
   padding: 0;
   margin: 0;
 }
@@ -65,7 +68,7 @@ nav ul li a {
 }
 .skills h1 {
   text-align: center;
-  color: rgb(5, 105, 5);
+  color: #117016;
   font-size: 60px;
 }
 .skill_box {
@@ -73,51 +76,60 @@ nav ul li a {
   grid-template-columns: auto auto;
   grid-template-rows: auto auto;
   gap: 20px;
-  padding: 20px 60px;
-  color: rgb(5, 105, 5);
+  padding: 20px 150px;
+  color: #117016;
   text-align: center;
-  font-weight: bold;
+  font-size: 18px;
+}
+.skill_box p {
+  text-align: justify;
+}
+.skill_box div {
+  box-shadow: 1px 1px 100px 1px rgba(0, 0, 0, 0.1);
+  padding: 20px;
 }
 .skill_box img {
   width: 60px;
   height: 60px;
 }
-
-.services{
+.service_text h3 {
+  font-size: 30px;
+}
+.service {
   display: flex;
   align-items: center;
   justify-content: center;
   gap: 12px;
   padding: 10px 0;
-  color: rgb(5, 105, 5);
+  color: #117016;
 }
-.services button{
-  background-color: rgb(5, 105, 5);
-  padding:15px ;
+.service button {
+  background-color: #117016;
+  padding: 15px;
   border: none;
   cursor: pointer;
-  border-radius:50% 50% 50% 50%;
+  border-radius: 50% 50% 50% 50%;
   font-size: 15px;
   transition: 0.5s ease;
 }
-.services button{
+.service button {
   text-decoration: none;
   color: white;
-} 
+}
 
-.services button:hover{
+.service button:hover {
   background-color: white;
-  color: rgb(5, 105, 5);
-  border:1px rgb(5, 105, 5) solid;
+  color: #117016;
+  border: 1px #45a049 solid;
   font-weight: bold;
 }
-.services button:hover a{
-  color:rgb(5, 105, 5);;
+.service button:hover a {
+  color: #117016;
 }
 
 .images h1 {
   text-align: center;
-  color: rgb(5, 105, 5);
+  color: #117016;
   font-size: 60px;
   font-weight: bold;
   padding: 30px 0 0 0;
@@ -126,17 +138,171 @@ nav ul li a {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  gap: 20px; 
+  gap: 20px;
   padding: 20px 60px;
 }
-.image_box img{
-  width: 400px;
-  height: 300px;
+.image_box img {
+  width: 300px;
+  height: 200px;
+  transition: transform 0.3s ease-in-out;
 }
 
+.image_box img:hover {
+  transform: scale(2); 
+}
+
+/* SERVICES */
+.services_main {
+  border-top: 1px solid rgba(0, 0, 0, 0.2);
+  padding: 10px 60px;
+}
+.services_main .title {
+  text-align: center;
+  color: #117016;
+  font-size: 60px;
+  font-weight: bold;
+  padding: 30px 0 0 0;
+}
+.service_box {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+  align-items: center;
+  box-shadow: 1px 1px 100px 1px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  border-radius: 10px;
+  flex-wrap: wrap;
+  margin: 20px 0px;
+}
+.service_box img {
+  width: 40%;
+  height: 250px;
+  border-radius: 10px;
+  transition: transform 0.3s ease-in-out;
+}
+.service_box img:hover{
+  transform: scale(1.2);
+  border-radius: 0px;
+}
+.service_box p {
+  display: flex;
+  width: 58%;
+  font-size: 18px;
+  text-align: justify;
+  color: #117016;
+}
+.service_title h2 {
+  color: #117016;
+  margin: 20px 0px;
+  text-decoration: underline;
+}
+.calculation_form {
+  padding: 40px 60px;
+}
+.calculation_table {
+  width: 100%;
+  border-collapse: collapse;
+  border: 1px solid #ccc;
+  text-align: center;
+}
+.calculation_table th {
+  background-color: rgb(190, 230, 172);
+  padding: 10px;
+}
+.calculation_table td {
+  padding: 10px;
+}
+.calculation_form button {
+  padding: 8px 5px;
+  margin: 10px 0px;
+  background-color: #117016;
+  color: white;
+  font-size: 15px;
+  /* border:2px solid rgba(0, 0, 0, 0.5); */
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  border-radius: 5px;
+}
+
+.calculation_form .result p {
+  background-color: rgb(192, 44, 44);
+  width: 13%;
+  padding: 10px;
+  color: white;
+  font-weight: bold;
+}
+.form_button {
+  display: flex;
+  justify-content: space-between;
+}
+.calculation_title {
+  text-align: center;
+  font-size: 60px;
+  color: #117016;
+  border-top: 1px solid rgba(0, 0, 0, 0.2);
+  padding: 10px 0px;
+}
+
+.error {
+  color: red;
+  font-weight: bold;
+}
+
+/* Style général du formulaire */
+.contact_form {
+  max-width: 400px;
+  margin: 0 auto;
+  padding: 20px 0px;
+}
+
+/* Style des labels */
+label {
+  margin-bottom: 5px;
+}
+
+/* Style des champs de saisie */
+input[type="text"],
+input[type="email"],
+textarea {
+  width: 100%;
+  padding: 8px;
+  margin-bottom: 15px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+/* Style des messages d'erreur */
+.error {
+  color: red;
+  font-size: 12px;
+  margin-top: -10px; /* Ajustement pour aligner les messages d'erreur */
+}
+
+/* Style du bouton de soumission */
+input[type="submit"] {
+  background-color: #4caf50;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+input[type="submit"]:hover {
+  background-color: #117016;
+}
+
+.contact_title{
+  text-align: center;
+  font-size: 60px;
+  border-top: 1px solid rgba(0, 0, 0, 0.1);
+  color:#45a049 ;
+}
+
+/* FOOTER */
 footer{
   background-color: rgb(5, 105, 5);
-  padding: 50px 160px 5px 110px;
+  padding: 100px 160px;
   color: white;
   
 }

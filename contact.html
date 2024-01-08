@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/style.css" />
+    <script src="javascript/script.js"></script>
+    <title>Kevine & Barth</title>
+  </head>
+
+  <body>
+    <!-- NAVBAR -->
+    <nav>
+      <div class="logo">
+        <a href="index.html"
+          ><img src="images/logo.png" alt="gardening_logo"
+        /></a>
+        <!-- logo redirigeant vers la page d'accueil -->
+      </div>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <!-- lien vers la page d'accueil -->
+        <li><a href="services.html">Services</a></li>
+        <!-- lien vers la page des services -->
+        <li><a href="calculation.html">Online Calculation</a></li>
+        <!-- lien vers la page de calcul en ligne -->
+        <li><a href="contact.html">Contact Us</a></li>
+        <!-- lien vers la page de contact -->
+      </ul>
+    </nav>
+    <!-- END NAVBAR -->
+
+    <h1 class="contact_title">Contact Us</h1>
+    <form id="contactForm" class="contact_form">
+      <label for="firstName">First Name:</label>
+      <input type="text" id="firstName" placeholder="Enter your first name" />
+      <p class="error" id="firstNameError"></p>
+
+      <label for="lastName">Last Name:</label>
+      <input type="text" id="lastName" placeholder="Enter your last name" />
+      <p class="error" id="lastNameError"></p>
+
+      <label for="phoneNumber">Phone Number (XXX-XXXXXXX):</label>
+      <input type="text" id="phoneNumber" placeholder="XXX-XXXXXXX" />
+      <p class="error" id="phoneNumberError"></p>
+
+      <label for="email">Email:</label>
+      <input type="email" id="email" placeholder="Enter your email" />
+      <p class="error" id="emailError"></p>
+
+      <label for="message">Message (Max 300 characters):</label><br />
+      <textarea
+        id="message"
+        placeholder="Write your message here (max 300 characters)"
+      ></textarea>
+      <p class="error" id="messageError"></p>
+
+      <input type="submit" value="Submit" onclick="contactForm()" />
+    </form>
+
+    <!-- FOOTER -->
+    <footer>
+      <div class="elements">
+        <div class="contact">
+          <h3>Our Contacts</h3>
+          <ul>
+            <li><a href="">9053311122233</a></li>
+            <li><a href="">9053311122233</a></li>
+            <li><a href="">9053311122233</a></li>
+            <li><a href="">9053311122233</a></li>
+          </ul>
+        </div>
+
+        <div class="links">
+          <h3>Links</h3>
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="services.html">Services</a></li>
+            <li><a href="calculation.html">Online Calculation</a></li>
+            <li><a href="contact.html">Contact Us</a></li>
+          </ul>
+        </div>
+        <div class="contact">
+          <h3>Available in</h3>
+          <ul>
+            <li><a href="">Lefkosa</a></li>
+            <li><a href="">Girne</a></li>
+            <li><a href="">Instanbul</a></li>
+          </ul>
+        </div>
+      </div>
+    </footer>
+    <!-- END FOOTER -->
+  </body>
+</html>
