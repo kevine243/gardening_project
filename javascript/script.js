@@ -1,4 +1,3 @@
-// Cette fonction calcule le coût total en fonction des options sélectionnées
 function calculateCost() {
   // Sélection des éléments HTML correspondant aux cases à cocher et aux champs de coût
   const flower = document.querySelector("#flower");
@@ -26,6 +25,7 @@ function calculateCost() {
   if (trimming.checked) {
     totalCost += 250 + 100;
   }
+  
 
   // Vérification si le coût total dépasse 1000 pour appliquer une réduction de 15%
   if (totalCost > 1000) {
